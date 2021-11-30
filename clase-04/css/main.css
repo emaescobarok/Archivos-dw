@@ -1,0 +1,38 @@
+
+
+
+/* GRID */
+
+.grid-container{
+    background-color: coral;
+    padding: 5px;
+
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr) ; */
+    grid-template-areas: 
+    'header header header'
+    'main main sidebar'
+    'main main sidebar'
+    'footer footer footer'
+    ;
+
+}
+
+.grid-container div{
+    background-color: darkkhaki;
+    padding: 5px;
+    border: solid 1px burlywood;
+}
+
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.footer {
+    grid-area: footer;
+}
